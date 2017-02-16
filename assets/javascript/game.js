@@ -1,9 +1,26 @@
 var wordList = [
- "jermone",
- "neena",
- "darion",
- "lou",
- "greg"
+ "mario",
+ "luigi",
+ "yoshi",
+ "link",
+ "samus",
+ "kirby",
+ "fox",
+ "pikachu",
+ "jigglypuff",
+ "ness",
+ "peach",
+ "bowser",
+ "drmario",
+ "zelda",
+ "sheik",
+ "ganondorf",
+ "falco",
+ "mewtwo",
+ "pichu",
+ "marth",
+ "roy",
+"captain falcon",
 ]
 
 var chosenWord = "";
@@ -18,7 +35,7 @@ var numGuesses = 9;
 
 function startGame(){
 /*
-1. select a word at random x
+1. select a letter at random x
 2. want to break up that random word into letters and replace them with
 underscores x
 3. we want to add those underscores to the HTML 
@@ -26,7 +43,7 @@ underscores x
 and wronggueses is empty as well x
 */
 wrongGuesses = [];
-console.log("this is wrong guesses in  startGame", wrongGuesses);
+console.log("this is a wrong guess in startGame", wrongGuesses);
 numGuesses = 9;
 blanksAndSuccesses = [];
 
@@ -69,8 +86,7 @@ function checkLetters(letter){
         for(i = 0; i < numBlanks; i++){
             if(chosenWord[i] === letter){
             blanksAndSuccesses[i] = letter;
-
-        }
+    }
 
         }
     }else{
