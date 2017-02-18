@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS Hangman Game</title>
+    <title>Hangman Game Homework</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-<p>Guesses Left: <span id="guesses-left"></span></p>
-<p>Wrong Guesses: <span id="wrong-guesses"></span></p>
-<p>Wins: <span id="win-counter"></span></p>
-<p>Losses: <span id="loss-counter"></span></p>
+
+<audio autoplay>
+  <source src="assets/images/53-final-destination.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+<a href="http://fontmeme.com/super-smash-bros-font/"><img src="http://fontmeme.com/permalink/170218/1a91360c346be18d523011ddaf813e89.png" alt="super-smash-bros-font" border="0"></a>
+</div>
+
+<div class="container">
+
+
+<img src="assets/images/Falcomeleeclear.png" class="center1"></img>
+<img src="assets/images/Ssbm_link_render_2_by_machriderz-d56vkia.png" height="220px" width ="175px" class="center2"></img>
+
+
+<h1>Press Any Key To Begin</h1>
+<p>Stocks Left: <span id="num-guesses"></span></p>
+<p>Items Used: <span id="wrong-guesses"></span></p>
+<p>Player 1 Wins: <span id="win-counter"></span></p>
+<p>CPU Wins: <span id="loss-counter"></span></p>
 <h3 id="word-blank"></h3>
+
+</div>
 
 <script src="assets/javascript/game.js"></script>
 </body>

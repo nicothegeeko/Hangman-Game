@@ -1,0 +1,46 @@
+.container {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+}
+
+body {background-color: black;
+background-image:  url(../images/battlefield.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: 100%;
+}
+
+img.center1 {
+  display: block;
+  padding-top: 20%;
+  padding-left: 20%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.center2 {
+  display: block;
+  padding-top: 22%;
+  padding-right: 15%;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {font-family: 'Oswald', sans-serif;
+color: #ff3300;
+font-size: 20px;}
+
+h1 {color: #ff3300;
+text-decoration: underline;
+font-size: 22px;}
+
+#word-blank {color: #ff3300;}
+
+
+
+
