@@ -36,7 +36,7 @@ var guessesLeft = 10;
 
 
 function startGame() {
-    
+
     //fills in blanks for game
 
     word = wordList[Math.floor(Math.random() * wordList.length)];
@@ -62,7 +62,7 @@ function startGame() {
 
 //loops for checking that correct inputs are typed
 function checkLetters(letter) {
-    
+
 
     var letterInWord = false;
 
@@ -88,13 +88,13 @@ function checkLetters(letter) {
 
 }
 
-function Winner()
-{alert("Player One Wins!!");
- startGame();
+function Winner() {
+    alert("Player One Wins!!");
+    startGame();
 }
 //basic html features and scorekeeping
 function stageComplete() {
-   
+
 
     document.getElementById('word-blank').innerHTML = correctLetters.join(" ");
     document.getElementById('num-guesses').innerHTML = guessesLeft;
@@ -107,7 +107,7 @@ function stageComplete() {
         winningScore++;
         document.getElementById('win-counter').innerHTML = winningScore;
         startGame();
-        window.setTimeout( Winner, 1000 );
+        window.setTimeout(Winner, 1000);
     } else if (guessesLeft === 0) {
         document.getElementById('loss-counter').innerHTML = losingScore++;
         document.getElementById('wrong-guesses').innerHTML = "";
@@ -120,7 +120,7 @@ function stageComplete() {
 //check user inputs
 startGame();
 document.onkeyup = function(event) {
-    
+
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     console.log("letter typed by user", letterGuessed)
     checkLetters(letterGuessed)
