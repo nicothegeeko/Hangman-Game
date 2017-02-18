@@ -36,4 +36,4 @@ Java Script
 
 Code Explanation
 
-Utilized the @Media tag in CSS to create different working responsive versions.
+Used JavaScript to create a basic hangman game. 
